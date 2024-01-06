@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruairi McLean - Music Production Portfolio</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2d2d2d;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            border-bottom: 2px solid #555;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+            position: relative; /* Added for positioning */
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #bbb;
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .header-icons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+
+        .header-icons a {
+            color: #fff;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-bottom: 60px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-out forwards 0.3s;
+        }
+
+        .project {
+            margin-bottom: 30px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #3d3d3d;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        .project h3 {
+            background-color: #333;
+            margin: 0;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .project p {
+            padding: 10px;
+            line-height: 1.5;
+        }
+
+        .audio-player {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #333;
+            margin-top: 10px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .audio-player audio {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease-out forwards 1s;
+        }
+
+        /* Social media icons */
+        .social-icons {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 5px 0; /* Adjust margin */
+            text-decoration: none;
+        }
+
+        /* Scroll animation */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-icons">
+            <!-- Header icons -->
+            <a href="https://www.facebook.com/ruairi.mclean"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@ruairi.mclean"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/greggslvr/"><i class="fab fa-instagram"></i></a>
+            <!-- Add more header icons as needed -->
+        </div>
+        <h1>Music Production Portfolio</h1>
+        <h2>Ruairi McLean</h2>
+    </header>
+
+    <section>
+        <h2>Latest Projects</h2>
+
+        <div class="project">
+            <h3>Project 1: Demo Mixing</h3>
+            <p>Recently, I have been recording alongside my new band <a href="https://www.instagram.com/the.regents.band/">The Regents</a>.<br>
+              The initial recording was for the most part engineered
+              by Rhys Hopkins and myself,<br> with a focus on capturing a raw, heavy brit
+              sound. </p>
+              <p>This track 'Denial' is mixed and very roughly mastered by myself.</p>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="AudioAssets/denial master 12 LUFS w solo.wav" type="audio/wav">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Game Music</h3>
+            <p>Focusing on employability and widening my genre portfolio, I have <br>
+            been trying my hand at making game and ambient music, particularly <br>
+            looping music which strikes a balance between music development <br>
+            and subtlety as to keep the player engaged but focused.</p>
+            <p>This is a piece developed using exclusively a Korg Modelling Synth and <br>
+            Kontakt sampler instruments</p>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="AudioAssets/ambient music for a game.wav" type="audio/wav">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ruairi McLean - Music Production Portfolio</p>
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ruairi.mclean"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@ruairi.mclean"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/greggslvr/"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+    </footer>
+
+</body>
+
+</html>
